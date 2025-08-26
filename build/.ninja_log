@@ -1,0 +1,14 @@
+# ninja log v5
+251	193235	0	/home/hai_kyle_beaubouef/DrumMachine/build/CMakeFiles/cmake.verify_globs	4924af3d13d3ba6e
+193394	193883	1756194117911118628	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	92ee8b5a2e0daa1f
+193392	194189	1756194118209642442	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	448d2c0a728eb0c9
+193414	203728	1756194127753133435	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o	34c7ab0eb8a25169
+171	196554	0	/home/hai_kyle_beaubouef/DrumMachine/build/CMakeFiles/cmake.verify_globs	4924af3d13d3ba6e
+197112	197683	1756194200526947609	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	92ee8b5a2e0daa1f
+197106	197929	1756194200774883856	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	448d2c0a728eb0c9
+193884	300178	1756194224086208299	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_events/juce_events.cpp.o	756c260cdb16b436
+193390	426174	1756194349889263688	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	d19ea979e482cb1d
+193407	474924	1756194398598433722	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o	6e34b7406a0a24c
+197104	416898	1756194419522388984	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	d19ea979e482cb1d
+193412	504461	1756194428152154519	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o	41b90cbd9955fc2b
+197144	451980	1756194454591006789	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o	6e34b7406a0a24c
