@@ -25,7 +25,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -51,7 +51,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -256,22 +256,12 @@ GIT_EXECUTABLE:FILEPATH=/usr/local/bin/git
 //Value Computed by CMake
 JUCE_BINARY_DIR:STATIC=/workspaces/DrumMachine/build/_deps/juce-build
 
-//Add build targets for the DemoRunner and PIPs
-JUCE_BUILD_EXAMPLES:BOOL=OFF
-
-//Add build targets for the Projucer and other tools
-JUCE_BUILD_EXTRAS:BOOL=OFF
-
 //Whether or not plugins should be installed to the system after
 // building
 JUCE_COPY_PLUGIN_AFTER_BUILD:BOOL=OFF
 
 //Show all module sources in IDE projects
 JUCE_ENABLE_MODULE_SOURCE_GROUPS:BOOL=OFF
-
-//The location, relative to the install prefix, where the JUCE
-// config file will be installed
-JUCE_INSTALL_DESTINATION:STRING=lib/cmake/JUCE-7.0.9
 
 //Value Computed by CMake
 JUCE_IS_TOP_LEVEL:STATIC=OFF
@@ -280,11 +270,7 @@ JUCE_IS_TOP_LEVEL:STATIC=OFF
 JUCE_MODULES_ONLY:BOOL=OFF
 
 //Value Computed by CMake
-JUCE_SOURCE_DIR:STATIC=/workspaces/JUCE
-
-//The location, relative to the install prefix, where juceaide
-// will be installed
-JUCE_TOOL_INSTALL_DIR:STRING=bin/JUCE-7.0.9
+JUCE_SOURCE_DIR:STATIC=/workspaces/DrumMachine/build/_deps/juce-src
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -520,10 +506,8 @@ JUCE_CURL_LINUX_DEPS_libcurl_INCLUDEDIR:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_LIBDIR:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_PREFIX:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_VERSION:INTERNAL=
-//The name of the juceaide program
-JUCE_JUCEAIDE_NAME:INTERNAL=juceaide
 //The path to JUCE modules
-JUCE_MODULES_DIR:INTERNAL=/workspaces/JUCE/modules
+JUCE_MODULES_DIR:INTERNAL=/workspaces/DrumMachine/build/_deps/juce-src/modules
 //The target architecture, used to name internal folders in VST3
 // bundles, and to locate bundled libraries in modules
 JUCE_TARGET_ARCHITECTURE:INTERNAL=x86_64
