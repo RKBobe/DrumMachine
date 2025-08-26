@@ -1,0 +1,21 @@
+# ninja log v5
+1	20	1756198257215039846	juce-populate-prefix/src/juce-populate-stamp/juce-populate-mkdir	dd8ef6ef4851fb73
+1	20	1756198257215039846	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-mkdir	dd8ef6ef4851fb73
+21	80575	1756198337765043580	juce-populate-prefix/src/juce-populate-stamp/juce-populate-download	9d2121c09c042004
+21	80575	1756198337765043580	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-download	9d2121c09c042004
+80575	80615	0	juce-populate-prefix/src/juce-populate-stamp/juce-populate-update	ca016fc3a65c1224
+80575	80615	0	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-update	ca016fc3a65c1224
+80616	80648	1756198337843043584	juce-populate-prefix/src/juce-populate-stamp/juce-populate-patch	dbcf342886e3dda6
+80616	80648	1756198337843043584	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-patch	dbcf342886e3dda6
+80649	80672	1756198337866043585	juce-populate-prefix/src/juce-populate-stamp/juce-populate-configure	4a7b352dd24fc27a
+80649	80672	1756198337866043585	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-configure	4a7b352dd24fc27a
+80672	80694	1756198337889043586	juce-populate-prefix/src/juce-populate-stamp/juce-populate-build	afbaf2340c493956
+80672	80694	1756198337889043586	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-build	afbaf2340c493956
+80694	80725	1756198337920043587	juce-populate-prefix/src/juce-populate-stamp/juce-populate-install	7c5399824a35c4
+80694	80725	1756198337920043587	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-install	7c5399824a35c4
+80725	80753	1756198337948043589	juce-populate-prefix/src/juce-populate-stamp/juce-populate-test	da7ae547dfac1f79
+80725	80753	1756198337948043589	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-test	da7ae547dfac1f79
+80753	80804	1756198337995043591	CMakeFiles/juce-populate-complete	d3aea3b8cf56275d
+80753	80804	1756198337995043591	juce-populate-prefix/src/juce-populate-stamp/juce-populate-done	d3aea3b8cf56275d
+80753	80804	1756198337995043591	/workspaces/DrumMachine/build/_deps/juce-subbuild/CMakeFiles/juce-populate-complete	d3aea3b8cf56275d
+80753	80804	1756198337995043591	/workspaces/DrumMachine/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-done	d3aea3b8cf56275d

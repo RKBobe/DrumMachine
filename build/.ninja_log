@@ -1,14 +1,19 @@
 # ninja log v5
-251	193235	0	/home/hai_kyle_beaubouef/DrumMachine/build/CMakeFiles/cmake.verify_globs	4924af3d13d3ba6e
-193394	193883	1756194117911118628	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	92ee8b5a2e0daa1f
-193392	194189	1756194118209642442	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	448d2c0a728eb0c9
-193414	203728	1756194127753133435	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o	34c7ab0eb8a25169
-171	196554	0	/home/hai_kyle_beaubouef/DrumMachine/build/CMakeFiles/cmake.verify_globs	4924af3d13d3ba6e
-197112	197683	1756194200526947609	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	92ee8b5a2e0daa1f
-197106	197929	1756194200774883856	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	448d2c0a728eb0c9
-193884	300178	1756194224086208299	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_events/juce_events.cpp.o	756c260cdb16b436
-193390	426174	1756194349889263688	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	d19ea979e482cb1d
-193407	474924	1756194398598433722	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o	6e34b7406a0a24c
-197104	416898	1756194419522388984	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	d19ea979e482cb1d
-193412	504461	1756194428152154519	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o	41b90cbd9955fc2b
-197144	451980	1756194454591006789	CMakeFiles/DrumMachine.dir/mnt/d/Khai_/Projects/JUCE/modules/juce_graphics/juce_graphics.cpp.o	6e34b7406a0a24c
+2	56	0	/workspaces/DrumMachine/build/CMakeFiles/cmake.verify_globs	db76c9db1c51db2b
+57	71	1756198549976053418	DrumMachine_artefacts/JuceLibraryCode/JuceHeader.h	96b4e75325c8e28e
+57	71	1756198549976053418	/workspaces/DrumMachine/build/DrumMachine_artefacts/JuceLibraryCode/JuceHeader.h	96b4e75325c8e28e
+71	13488	1756198563389054040	CMakeFiles/DrumMachine.dir/Source/Main.cpp.o	a265c0e1f3256c20
+13510	13556	1756198563461054043	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	6ee5a331c2799870
+13557	13599	1756198563505054045	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	fb0cffe166c57226
+72	13960	1756198563865054062	CMakeFiles/DrumMachine.dir/Source/MainComponent.cpp.o	339ba7af2c7986f3
+72	27637	1756198577499054694	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors.cpp.o	96efa07f97d4839c
+13599	32313	1756198582191054911	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_gui_extra/juce_gui_extra.cpp.o	7e978ef0144cd82c
+32316	41236	1756198591136055326	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_events/juce_events.cpp.o	bf8143ad055472b0
+27645	54848	1756198604718055956	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_graphics/juce_graphics.cpp.o	b5ca3d40621de114
+54851	61488	1756198611381056264	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_data_structures/juce_data_structures.cpp.o	ec820eb7a64e6478
+41239	67062	1756198616922056521	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_core/juce_core.cpp.o	556f7f14a75dc38b
+61488	75669	1756198625561056922	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.cpp.o	7422e34556890661
+67064	83802	1756198633674057298	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_dsp/juce_dsp.cpp.o	3a9183cb53194a0a
+13960	85122	1756198634858057353	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_gui_basics/juce_gui_basics.cpp.o	fdf8b3b2c122c2
+75672	88908	1756198638803057536	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_formats/juce_audio_formats.cpp.o	2ffa83e5e435b6b7
+88914	90997	1756198640883057632	DrumMachine_artefacts/Drum Machine	c4edbeccd2c13dae
