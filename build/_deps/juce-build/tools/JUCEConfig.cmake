@@ -1,7 +1,7 @@
 # ==============================================================================
 #
 #  This file is part of the JUCE library.
-#  Copyright (c) 2020 - Raw Material Software Limited
+#  Copyright (c) - Raw Material Software Limited
 #
 #  JUCE is an open source library subject to commercial or open-source
 #  licensing.
@@ -45,6 +45,7 @@ endmacro()
 ####################################################################################
 
 include("${CMAKE_CURRENT_LIST_DIR}/LV2_HELPER.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/VST3_HELPER.cmake")
 
 if(NOT TARGET juce::juceaide)
     add_executable(juce::juceaide IMPORTED)
@@ -54,14 +55,15 @@ endif()
 
 check_required_components("JUCE")
 
-set(JUCE_MODULES_DIR "${PACKAGE_PREFIX_DIR}/include/JUCE-7.0.9/modules" CACHE INTERNAL
+set(JUCE_MODULES_DIR "${PACKAGE_PREFIX_DIR}/include/JUCE-8.0.8/modules" CACHE INTERNAL
     "The path to JUCE modules")
 
-include("${PACKAGE_PREFIX_DIR}/lib/cmake/JUCE-7.0.9/JUCEModuleSupport.cmake")
-include("${PACKAGE_PREFIX_DIR}/lib/cmake/JUCE-7.0.9/JUCEUtils.cmake")
+include("${PACKAGE_PREFIX_DIR}/lib/cmake/JUCE-8.0.8/JUCEModuleSupport.cmake")
+include("${PACKAGE_PREFIX_DIR}/lib/cmake/JUCE-8.0.8/JUCEUtils.cmake")
 
 set(_juce_modules
     juce_analytics
+    juce_animation
     juce_audio_basics
     juce_audio_devices
     juce_audio_formats
@@ -77,6 +79,8 @@ set(_juce_modules
     juce_graphics
     juce_gui_basics
     juce_gui_extra
+    juce_javascript
+    juce_midi_ci
     juce_opengl
     juce_osc
     juce_product_unlocking
@@ -110,7 +114,7 @@ unset(_targets_defined)
 unset(_targets_expected)
 
 foreach(_juce_module IN LISTS _juce_modules)
-    juce_add_module("${PACKAGE_PREFIX_DIR}/include/JUCE-7.0.9/modules/${_juce_module}" ALIAS_NAMESPACE juce)
+    juce_add_module("${PACKAGE_PREFIX_DIR}/include/JUCE-8.0.8/modules/${_juce_module}" ALIAS_NAMESPACE juce)
 endforeach()
 
 unset(_juce_modules)

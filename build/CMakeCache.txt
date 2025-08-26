@@ -29,11 +29,11 @@ CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-13
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-13
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -55,11 +55,11 @@ CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-13
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-13
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -96,9 +96,6 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
-
-//Value Computed by CMake.
-CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/workspaces/DrumMachine/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -218,9 +215,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
-//Path to a program.
-CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
-
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -286,7 +280,7 @@ JUCE_IS_TOP_LEVEL:STATIC=OFF
 JUCE_MODULES_ONLY:BOOL=OFF
 
 //Value Computed by CMake
-JUCE_SOURCE_DIR:STATIC=/workspaces/DrumMachine/build/_deps/juce-src
+JUCE_SOURCE_DIR:STATIC=/workspaces/JUCE
 
 //The location, relative to the install prefix, where juceaide
 // will be installed
@@ -324,9 +318,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/workspaces/DrumMachine/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=22
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -425,7 +419,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.28
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.22
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -452,14 +446,12 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STRIP
 CMAKE_STRIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_TAPI
-CMAKE_TAPI-ADVANCED:INTERNAL=1
 //uname command
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 JUCE_BROWSER_LINUX_DEPS_CFLAGS:INTERNAL=
@@ -514,16 +506,16 @@ JUCE_CURL_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
 JUCE_CURL_LINUX_DEPS_STATIC_CFLAGS_I:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_CFLAGS_OTHER:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
-JUCE_CURL_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lcurl;-lnghttp2;-lidn2;-lrtmp;-lssh;-lssh;-lpsl;-lssl;-lcrypto;-lssl;-lcrypto;-lgssapi_krb5;-llber;-lldap;-llber;-lzstd;-lbrotlidec;-lz
+JUCE_CURL_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu/mit-krb5;-lcurl;-lnghttp2;-lidn2;-lrtmp;-lssh;-lpsl;-lssl;-lcrypto;-lssl;-lcrypto;-lgssapi_krb5;-llber;-lldap;-llber;-lzstd;-lbrotlidec;-lz
 JUCE_CURL_LINUX_DEPS_STATIC_LDFLAGS_OTHER:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_LIBDIR:INTERNAL=
-JUCE_CURL_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=curl;nghttp2;idn2;rtmp;ssh;ssh;psl;ssl;crypto;ssl;crypto;gssapi_krb5;lber;ldap;lber;zstd;brotlidec;z
-JUCE_CURL_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+JUCE_CURL_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=curl;nghttp2;idn2;rtmp;ssh;psl;ssl;crypto;ssl;crypto;gssapi_krb5;lber;ldap;lber;zstd;brotlidec;z
+JUCE_CURL_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/mit-krb5
 JUCE_CURL_LINUX_DEPS_STATIC_LIBS:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_LIBS_L:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_LIBS_OTHER:INTERNAL=
 JUCE_CURL_LINUX_DEPS_STATIC_LIBS_PATHS:INTERNAL=
-JUCE_CURL_LINUX_DEPS_VERSION:INTERNAL=8.5.0
+JUCE_CURL_LINUX_DEPS_VERSION:INTERNAL=7.81.0
 JUCE_CURL_LINUX_DEPS_libcurl_INCLUDEDIR:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_LIBDIR:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_PREFIX:INTERNAL=
@@ -531,7 +523,7 @@ JUCE_CURL_LINUX_DEPS_libcurl_VERSION:INTERNAL=
 //The name of the juceaide program
 JUCE_JUCEAIDE_NAME:INTERNAL=juceaide
 //The path to JUCE modules
-JUCE_MODULES_DIR:INTERNAL=/workspaces/DrumMachine/build/_deps/juce-src/modules
+JUCE_MODULES_DIR:INTERNAL=/workspaces/JUCE/modules
 //The target architecture, used to name internal folders in VST3
 // bundles, and to locate bundled libraries in modules
 JUCE_TARGET_ARCHITECTURE:INTERNAL=x86_64
@@ -539,8 +531,6 @@ JUCE_TARGET_ARCHITECTURE:INTERNAL=x86_64
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-//linker supports push/pop state
-_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 __pkg_config_arguments_JUCE_CURL_LINUX_DEPS:INTERNAL=libcurl
 __pkg_config_arguments_juce_audio_devices_LINUX_DEPS:INTERNAL=alsa
 __pkg_config_arguments_juce_graphics_LINUX_DEPS:INTERNAL=freetype2
@@ -552,12 +542,12 @@ __pkg_config_checked_juce_graphics_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_juce_opengl_LINUX_DEPS:INTERNAL=1
 //Result of TRY_COMPILE
 compile_result:INTERNAL=FALSE
-juce_audio_devices_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include
+juce_audio_devices_LINUX_DEPS_CFLAGS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_audio_devices_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
 juce_audio_devices_LINUX_DEPS_FOUND:INTERNAL=1
 juce_audio_devices_LINUX_DEPS_INCLUDEDIR:INTERNAL=/usr/include
-juce_audio_devices_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include
+juce_audio_devices_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lasound
 juce_audio_devices_LINUX_DEPS_LDFLAGS_OTHER:INTERNAL=
 juce_audio_devices_LINUX_DEPS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
@@ -569,30 +559,30 @@ juce_audio_devices_LINUX_DEPS_LIBS_OTHER:INTERNAL=
 juce_audio_devices_LINUX_DEPS_LIBS_PATHS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_MODULE_NAME:INTERNAL=alsa
 juce_audio_devices_LINUX_DEPS_PREFIX:INTERNAL=/usr
-juce_audio_devices_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include
+juce_audio_devices_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_CFLAGS_I:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_CFLAGS_OTHER:INTERNAL=
-juce_audio_devices_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
-juce_audio_devices_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lasound;-lm;-lpthread;-lrt
+juce_audio_devices_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=
+juce_audio_devices_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lasound;-lm;-ldl;-lpthread;-lrt
 juce_audio_devices_LINUX_DEPS_STATIC_LDFLAGS_OTHER:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_LIBDIR:INTERNAL=
-juce_audio_devices_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=asound;m;pthread;rt
+juce_audio_devices_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=asound;m;dl;pthread;rt
 juce_audio_devices_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 juce_audio_devices_LINUX_DEPS_STATIC_LIBS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_LIBS_L:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_LIBS_OTHER:INTERNAL=
 juce_audio_devices_LINUX_DEPS_STATIC_LIBS_PATHS:INTERNAL=
-juce_audio_devices_LINUX_DEPS_VERSION:INTERNAL=1.2.11
+juce_audio_devices_LINUX_DEPS_VERSION:INTERNAL=1.2.6.1
 juce_audio_devices_LINUX_DEPS_alsa_INCLUDEDIR:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_LIBDIR:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_PREFIX:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_VERSION:INTERNAL=
-juce_graphics_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16
+juce_graphics_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16
 juce_graphics_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_graphics_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_FOUND:INTERNAL=1
 juce_graphics_LINUX_DEPS_INCLUDEDIR:INTERNAL=/usr/include
-juce_graphics_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include;/usr/include/libpng16
+juce_graphics_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16
 juce_graphics_LINUX_DEPS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfreetype
 juce_graphics_LINUX_DEPS_LDFLAGS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
@@ -604,30 +594,30 @@ juce_graphics_LINUX_DEPS_LIBS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_LIBS_PATHS:INTERNAL=
 juce_graphics_LINUX_DEPS_MODULE_NAME:INTERNAL=freetype2
 juce_graphics_LINUX_DEPS_PREFIX:INTERNAL=/usr
-juce_graphics_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16
+juce_graphics_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16
 juce_graphics_LINUX_DEPS_STATIC_CFLAGS_I:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_CFLAGS_OTHER:INTERNAL=
-juce_graphics_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include;/usr/include/libpng16
-juce_graphics_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfreetype;-lbz2;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-lpng16;-lm;-lz;-lm;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-lbrotlidec;-L/usr/lib/x86_64-linux-gnu;-lbrotlicommon
+juce_graphics_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16
+juce_graphics_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfreetype;-lpng16;-lm;-lz;-lm;-lz;-lbrotlidec;-lbrotlicommon
 juce_graphics_LINUX_DEPS_STATIC_LDFLAGS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBDIR:INTERNAL=
-juce_graphics_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=freetype;bz2;z;png16;m;z;m;z;brotlidec;brotlicommon
-juce_graphics_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu
+juce_graphics_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=freetype;png16;m;z;m;z;brotlidec;brotlicommon
+juce_graphics_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 juce_graphics_LINUX_DEPS_STATIC_LIBS:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_L:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_PATHS:INTERNAL=
-juce_graphics_LINUX_DEPS_VERSION:INTERNAL=26.1.20
+juce_graphics_LINUX_DEPS_VERSION:INTERNAL=24.1.18
 juce_graphics_LINUX_DEPS_freetype2_INCLUDEDIR:INTERNAL=
 juce_graphics_LINUX_DEPS_freetype2_LIBDIR:INTERNAL=
 juce_graphics_LINUX_DEPS_freetype2_PREFIX:INTERNAL=
 juce_graphics_LINUX_DEPS_freetype2_VERSION:INTERNAL=
-juce_opengl_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include
+juce_opengl_LINUX_DEPS_CFLAGS:INTERNAL=
 juce_opengl_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_opengl_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
 juce_opengl_LINUX_DEPS_FOUND:INTERNAL=1
 juce_opengl_LINUX_DEPS_INCLUDEDIR:INTERNAL=/usr/include
-juce_opengl_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include
+juce_opengl_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=
 juce_opengl_LINUX_DEPS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lGL
 juce_opengl_LINUX_DEPS_LDFLAGS_OTHER:INTERNAL=
 juce_opengl_LINUX_DEPS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
@@ -639,10 +629,10 @@ juce_opengl_LINUX_DEPS_LIBS_OTHER:INTERNAL=
 juce_opengl_LINUX_DEPS_LIBS_PATHS:INTERNAL=
 juce_opengl_LINUX_DEPS_MODULE_NAME:INTERNAL=gl
 juce_opengl_LINUX_DEPS_PREFIX:INTERNAL=/usr
-juce_opengl_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include
+juce_opengl_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=
 juce_opengl_LINUX_DEPS_STATIC_CFLAGS_I:INTERNAL=
 juce_opengl_LINUX_DEPS_STATIC_CFLAGS_OTHER:INTERNAL=
-juce_opengl_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
+juce_opengl_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=
 juce_opengl_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lGL
 juce_opengl_LINUX_DEPS_STATIC_LDFLAGS_OTHER:INTERNAL=
 juce_opengl_LINUX_DEPS_STATIC_LIBDIR:INTERNAL=

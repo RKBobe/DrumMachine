@@ -52,7 +52,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/workspaces/DrumMachine/build/_deps/juce-build/extras/Build/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-7.0.9" TYPE FILE FILES
     "/workspaces/DrumMachine/build/_deps/juce-build/JUCEConfigVersion.cmake"
     "/workspaces/DrumMachine/build/_deps/juce-build/JUCEConfig.cmake"

@@ -1,4 +1,4 @@
-# Install script for directory: /workspaces/DrumMachine/build/_deps/juce-src
+# Install script for directory: /workspaces/JUCE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,26 +52,26 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/workspaces/DrumMachine/build/_deps/juce-build/tools/extras/Build/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-7.0.9" TYPE FILE FILES
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-8.0.8" TYPE FILE FILES
     "/workspaces/DrumMachine/build/_deps/juce-build/tools/JUCEConfigVersion.cmake"
     "/workspaces/DrumMachine/build/_deps/juce-build/tools/JUCEConfig.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCEHelperTargets.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JuceLV2Defines.h.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/LaunchScreen.storyboard"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/PIPAudioProcessor.cpp.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/PIPComponent.cpp.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/PIPConsole.cpp.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/RecentFilesMenuTemplate.nib"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/UnityPluginGUIScript.cs.in"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/checkBundleSigning.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/copyDir.cmake"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/juce_runtime_arch_detection.cpp"
-    "/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/juce_LinuxSubprocessHelper.cpp"
+    "/workspaces/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/JUCEUtils.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/JuceLV2Defines.h.in"
+    "/workspaces/JUCE/extras/Build/CMake/LaunchScreen.storyboard"
+    "/workspaces/JUCE/extras/Build/CMake/PIPAudioProcessor.cpp.in"
+    "/workspaces/JUCE/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in"
+    "/workspaces/JUCE/extras/Build/CMake/PIPComponent.cpp.in"
+    "/workspaces/JUCE/extras/Build/CMake/PIPConsole.cpp.in"
+    "/workspaces/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib"
+    "/workspaces/JUCE/extras/Build/CMake/UnityPluginGUIScript.cs.in"
+    "/workspaces/JUCE/extras/Build/CMake/checkBundleSigning.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/copyDir.cmake"
+    "/workspaces/JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp"
+    "/workspaces/JUCE/extras/Build/CMake/juce_LinuxSubprocessHelper.cpp"
     )
 endif()
 
