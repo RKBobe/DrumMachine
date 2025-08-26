@@ -2,3 +2,7 @@
 0	45	0	/workspaces/DrumMachine/build/_deps/juce-build/tools/CMakeFiles/cmake.verify_globs	7a9b8e7073bcf394
 0	9652	1756201967541211848	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o	d26cb09b6b239212
 0	9772	1756201967657211853	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o	7b604eec5e584a5a
+9772	17711	1756201975596212221	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.cpp.o	e1eae208c18db949
+9666	32673	1756201990510212913	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.cpp.o	1df06aa7cb55a727
+32676	37775	1756201995659213152	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_data_structures/juce_data_structures.cpp.o	267764c5e48dc989
+17712	38326	1756201996190213176	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.cpp.o	650a81327453ac4f
