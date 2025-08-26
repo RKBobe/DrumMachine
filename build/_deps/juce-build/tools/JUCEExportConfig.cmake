@@ -1,7 +1,7 @@
 # ==============================================================================
 #
 #  This file is part of the JUCE library.
-#  Copyright (c) - Raw Material Software Limited
+#  Copyright (c) 2020 - Raw Material Software Limited
 #
 #  JUCE is an open source library subject to commercial or open-source
 #  licensing.
@@ -45,7 +45,6 @@ endmacro()
 ####################################################################################
 
 include("${CMAKE_CURRENT_LIST_DIR}/LV2_HELPER.cmake")
-include("${CMAKE_CURRENT_LIST_DIR}/VST3_HELPER.cmake")
 
 if(NOT TARGET juce::juceaide)
     add_executable(juce::juceaide IMPORTED)
@@ -55,15 +54,14 @@ endif()
 
 check_required_components("JUCE")
 
-set(JUCE_MODULES_DIR "/workspaces/JUCE/modules" CACHE INTERNAL
+set(JUCE_MODULES_DIR "/workspaces/DrumMachine/build/_deps/juce-src/modules" CACHE INTERNAL
     "The path to JUCE modules")
 
-include("/workspaces/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake")
-include("/workspaces/JUCE/extras/Build/CMake/JUCEUtils.cmake")
+include("/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake")
+include("/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake")
 
 set(_juce_modules
     juce_analytics
-    juce_animation
     juce_audio_basics
     juce_audio_devices
     juce_audio_formats
@@ -79,8 +77,6 @@ set(_juce_modules
     juce_graphics
     juce_gui_basics
     juce_gui_extra
-    juce_javascript
-    juce_midi_ci
     juce_opengl
     juce_osc
     juce_product_unlocking
@@ -114,7 +110,7 @@ unset(_targets_defined)
 unset(_targets_expected)
 
 foreach(_juce_module IN LISTS _juce_modules)
-    juce_add_module("/workspaces/JUCE/modules/${_juce_module}" ALIAS_NAMESPACE juce)
+    juce_add_module("/workspaces/DrumMachine/build/_deps/juce-src/modules/${_juce_module}" ALIAS_NAMESPACE juce)
 endforeach()
 
 unset(_juce_modules)

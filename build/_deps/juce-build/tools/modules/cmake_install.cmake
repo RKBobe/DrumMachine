@@ -1,4 +1,4 @@
-# Install script for directory: /workspaces/JUCE/modules
+# Install script for directory: /workspaces/DrumMachine/build/_deps/juce-src/modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,94 +43,86 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_analytics")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_analytics")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_animation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_basics")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_basics")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_devices")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_devices")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_formats")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_formats")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_plugin_client")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_plugin_client")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_processors")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_processors")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_audio_utils")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_audio_utils")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_box2d")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_box2d")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_core")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_core")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_cryptography")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_cryptography")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_data_structures")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_data_structures")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_dsp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_dsp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_events")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_events")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_graphics")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_graphics")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_gui_basics")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_gui_basics")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_gui_extra")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_gui_extra")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_midi_ci")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_javascript")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_opengl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_midi_ci")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_osc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_opengl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_product_unlocking")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_osc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_product_unlocking")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-8.0.8/modules" TYPE DIRECTORY FILES "/workspaces/JUCE/modules/juce_video")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/JUCE-7.0.9/modules" TYPE DIRECTORY FILES "/workspaces/DrumMachine/build/_deps/juce-src/modules/juce_video")
 endif()
 

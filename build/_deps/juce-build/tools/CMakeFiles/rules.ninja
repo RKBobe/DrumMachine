@@ -20,16 +20,6 @@ rule CUSTOM_COMMAND
 
 
 #############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__juceaide_Debug
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__juceaide_Debug
@@ -52,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__juceaide_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/workspaces/JUCE -B/workspaces/DrumMachine/build/_deps/juce-build/tools
+  command = /usr/bin/cmake --regenerate-during-build -S/workspaces/DrumMachine/build/_deps/juce-src -B/workspaces/DrumMachine/build/_deps/juce-build/tools
   description = Re-running CMake...
   generator = 1
 

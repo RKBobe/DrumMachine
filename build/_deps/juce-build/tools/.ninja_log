@@ -1,14 +1,4 @@
 # ninja log v5
-2	76391	1756200903253162510	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_gui_basics/juce_gui_basics.cpp.o	500d99acca7a7cc7
-58154	73694	1756200900666162390	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.cpp.o	afaea0fadd908e28
-10622	58736	1756200885589161691	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o	8ff1fe9ad28b80b4
-47566	58152	1756200885135161670	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.cpp.o	b3f73b290661f2e7
-46734	47565	1756200874561161180	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o	a80bf760d3ab3c92
-10349	46730	1756200873668161139	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.cpp.o	c638bcc5f9d82cd7
-58742	58785	1756200885781161700	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o	3903dae20a8e76f9
-1	10620	1756200837613159467	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o	c5b5a513e51899fc
-76393	78946	1756200905922162634	extras/Build/juceaide/juceaide_artefacts/Debug/juceaide	2db7224ed623f201
-58786	66150	1756200893127162041	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_data_structures/juce_data_structures.cpp.o	d5b6edc7b2d821f1
-1	10339	1756200837331159454	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o	af1fe8d312cf3f59
-1	50	0	/workspaces/DrumMachine/build/_deps/juce-build/tools/CMakeFiles/cmake.verify_globs	7a9b8e7073bcf394
-0	51	0	/workspaces/DrumMachine/build/_deps/juce-build/tools/CMakeFiles/cmake.verify_globs	7a9b8e7073bcf394
+0	45	0	/workspaces/DrumMachine/build/_deps/juce-build/tools/CMakeFiles/cmake.verify_globs	7a9b8e7073bcf394
+0	9652	1756201967541211848	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o	d26cb09b6b239212
+0	9772	1756201967657211853	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o	7b604eec5e584a5a

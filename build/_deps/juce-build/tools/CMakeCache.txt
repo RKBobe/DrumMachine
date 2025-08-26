@@ -145,16 +145,16 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=JUCE
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=8.0.8
+CMAKE_PROJECT_VERSION:STATIC=7.0.9
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=8
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=7
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=8
+CMAKE_PROJECT_VERSION_PATCH:STATIC=9
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -242,7 +242,7 @@ JUCE_ENABLE_MODULE_SOURCE_GROUPS:BOOL=OFF
 
 //The location, relative to the install prefix, where the JUCE
 // config file will be installed
-JUCE_INSTALL_DESTINATION:STRING=lib/cmake/JUCE-8.0.8
+JUCE_INSTALL_DESTINATION:STRING=lib/cmake/JUCE-7.0.9
 
 //Value Computed by CMake
 JUCE_IS_TOP_LEVEL:STATIC=ON
@@ -251,11 +251,7 @@ JUCE_IS_TOP_LEVEL:STATIC=ON
 JUCE_MODULES_ONLY:BOOL=OFF
 
 //Value Computed by CMake
-JUCE_SOURCE_DIR:STATIC=/workspaces/JUCE
-
-//Location that overrides the default directory where our FindWebView2
-// script is looking for the *Microsoft.Web.WebView2* directory
-JUCE_WEBVIEW2_PACKAGE_LOCATION:BOOL=OFF
+JUCE_SOURCE_DIR:STATIC=/workspaces/DrumMachine/build/_deps/juce-src
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -268,9 +264,6 @@ pkgcfg_lib_JUCE_CURL_LINUX_DEPS_curl:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurl.
 
 //Path to a library.
 pkgcfg_lib_juce_audio_devices_LINUX_DEPS_asound:FILEPATH=/usr/lib/x86_64-linux-gnu/libasound.so
-
-//Path to a library.
-pkgcfg_lib_juce_graphics_LINUX_DEPS_fontconfig:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 
 //Path to a library.
 pkgcfg_lib_juce_graphics_LINUX_DEPS_freetype:FILEPATH=/usr/lib/x86_64-linux-gnu/libfreetype.so
@@ -361,7 +354,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/workspaces/JUCE
+CMAKE_HOME_DIRECTORY:INTERNAL=/workspaces/DrumMachine/build/_deps/juce-src
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -454,7 +447,7 @@ JUCE_BROWSER_LINUX_DEPS_webkit2gtk-4.0_LIBDIR:INTERNAL=
 JUCE_BROWSER_LINUX_DEPS_webkit2gtk-4.0_PREFIX:INTERNAL=
 JUCE_BROWSER_LINUX_DEPS_webkit2gtk-4.0_VERSION:INTERNAL=
 //The path to the folder holding this file and other resources
-JUCE_CMAKE_UTILS_DIR:INTERNAL=/workspaces/JUCE/extras/Build/CMake
+JUCE_CMAKE_UTILS_DIR:INTERNAL=/workspaces/DrumMachine/build/_deps/juce-src/extras/Build/CMake
 JUCE_CURL_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
 JUCE_CURL_LINUX_DEPS_CFLAGS_I:INTERNAL=
 JUCE_CURL_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
@@ -491,7 +484,7 @@ JUCE_CURL_LINUX_DEPS_libcurl_LIBDIR:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_PREFIX:INTERNAL=
 JUCE_CURL_LINUX_DEPS_libcurl_VERSION:INTERNAL=
 //The path to JUCE modules
-JUCE_MODULES_DIR:INTERNAL=/workspaces/JUCE/modules
+JUCE_MODULES_DIR:INTERNAL=/workspaces/DrumMachine/build/_deps/juce-src/modules
 //The target architecture, used to name internal folders in VST3
 // bundles, and to locate bundled libraries in modules
 JUCE_TARGET_ARCHITECTURE:INTERNAL=x86_64
@@ -501,16 +494,15 @@ PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 __pkg_config_arguments_JUCE_CURL_LINUX_DEPS:INTERNAL=libcurl
 __pkg_config_arguments_juce_audio_devices_LINUX_DEPS:INTERNAL=alsa
-__pkg_config_arguments_juce_graphics_LINUX_DEPS:INTERNAL=freetype2;fontconfig
+__pkg_config_arguments_juce_graphics_LINUX_DEPS:INTERNAL=freetype2
 __pkg_config_arguments_juce_opengl_LINUX_DEPS:INTERNAL=gl
 __pkg_config_checked_JUCE_BROWSER_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_JUCE_CURL_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_juce_audio_devices_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_juce_graphics_LINUX_DEPS:INTERNAL=1
 __pkg_config_checked_juce_opengl_LINUX_DEPS:INTERNAL=1
-__pkg_config_checked_package_to_be_found:INTERNAL=1
 //Result of TRY_COMPILE
-compile_result:INTERNAL=TRUE
+compile_result:INTERNAL=FALSE
 juce_audio_devices_LINUX_DEPS_CFLAGS:INTERNAL=
 juce_audio_devices_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_audio_devices_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
@@ -546,47 +538,41 @@ juce_audio_devices_LINUX_DEPS_alsa_INCLUDEDIR:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_LIBDIR:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_PREFIX:INTERNAL=
 juce_audio_devices_LINUX_DEPS_alsa_VERSION:INTERNAL=
-juce_graphics_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/libpng16
+juce_graphics_LINUX_DEPS_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16
 juce_graphics_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_graphics_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_FOUND:INTERNAL=1
-juce_graphics_LINUX_DEPS_INCLUDEDIR:INTERNAL=
-juce_graphics_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include/uuid;/usr/include/freetype2;/usr/include/libpng16
-juce_graphics_LINUX_DEPS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-lfreetype
+juce_graphics_LINUX_DEPS_INCLUDEDIR:INTERNAL=/usr/include
+juce_graphics_LINUX_DEPS_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16
+juce_graphics_LINUX_DEPS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfreetype
 juce_graphics_LINUX_DEPS_LDFLAGS_OTHER:INTERNAL=
-juce_graphics_LINUX_DEPS_LIBDIR:INTERNAL=
-juce_graphics_LINUX_DEPS_LIBRARIES:INTERNAL=fontconfig;freetype
+juce_graphics_LINUX_DEPS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+juce_graphics_LINUX_DEPS_LIBRARIES:INTERNAL=freetype
 juce_graphics_LINUX_DEPS_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 juce_graphics_LINUX_DEPS_LIBS:INTERNAL=
 juce_graphics_LINUX_DEPS_LIBS_L:INTERNAL=
 juce_graphics_LINUX_DEPS_LIBS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_LIBS_PATHS:INTERNAL=
-juce_graphics_LINUX_DEPS_MODULE_NAME:INTERNAL=
-juce_graphics_LINUX_DEPS_PREFIX:INTERNAL=
-juce_graphics_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/libpng16
+juce_graphics_LINUX_DEPS_MODULE_NAME:INTERNAL=freetype2
+juce_graphics_LINUX_DEPS_PREFIX:INTERNAL=/usr
+juce_graphics_LINUX_DEPS_STATIC_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16
 juce_graphics_LINUX_DEPS_STATIC_CFLAGS_I:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_CFLAGS_OTHER:INTERNAL=
-juce_graphics_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/uuid;/usr/include/freetype2;/usr/include/libpng16
-juce_graphics_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-luuid;-lexpat;-lm;-lfreetype;-lpng16;-lm;-lz;-lm;-lz;-lbrotlidec;-lbrotlicommon
+juce_graphics_LINUX_DEPS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16
+juce_graphics_LINUX_DEPS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfreetype;-lpng16;-lm;-lz;-lm;-lz;-lbrotlidec;-lbrotlicommon
 juce_graphics_LINUX_DEPS_STATIC_LDFLAGS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBDIR:INTERNAL=
-juce_graphics_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=fontconfig;uuid;expat;m;freetype;png16;m;z;m;z;brotlidec;brotlicommon
+juce_graphics_LINUX_DEPS_STATIC_LIBRARIES:INTERNAL=freetype;png16;m;z;m;z;brotlidec;brotlicommon
 juce_graphics_LINUX_DEPS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 juce_graphics_LINUX_DEPS_STATIC_LIBS:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_L:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_OTHER:INTERNAL=
 juce_graphics_LINUX_DEPS_STATIC_LIBS_PATHS:INTERNAL=
-juce_graphics_LINUX_DEPS_VERSION:INTERNAL=
-juce_graphics_LINUX_DEPS_fontconfig_INCLUDEDIR:INTERNAL=/usr/include
-juce_graphics_LINUX_DEPS_fontconfig_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-juce_graphics_LINUX_DEPS_fontconfig_MODULE_NAME:INTERNAL=fontconfig
-juce_graphics_LINUX_DEPS_fontconfig_PREFIX:INTERNAL=/usr
-juce_graphics_LINUX_DEPS_fontconfig_VERSION:INTERNAL=2.13.1
-juce_graphics_LINUX_DEPS_freetype2_INCLUDEDIR:INTERNAL=/usr/include
-juce_graphics_LINUX_DEPS_freetype2_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-juce_graphics_LINUX_DEPS_freetype2_MODULE_NAME:INTERNAL=freetype2
-juce_graphics_LINUX_DEPS_freetype2_PREFIX:INTERNAL=/usr
-juce_graphics_LINUX_DEPS_freetype2_VERSION:INTERNAL=24.1.18
+juce_graphics_LINUX_DEPS_VERSION:INTERNAL=24.1.18
+juce_graphics_LINUX_DEPS_freetype2_INCLUDEDIR:INTERNAL=
+juce_graphics_LINUX_DEPS_freetype2_LIBDIR:INTERNAL=
+juce_graphics_LINUX_DEPS_freetype2_PREFIX:INTERNAL=
+juce_graphics_LINUX_DEPS_freetype2_VERSION:INTERNAL=
 juce_opengl_LINUX_DEPS_CFLAGS:INTERNAL=
 juce_opengl_LINUX_DEPS_CFLAGS_I:INTERNAL=
 juce_opengl_LINUX_DEPS_CFLAGS_OTHER:INTERNAL=
@@ -622,37 +608,10 @@ juce_opengl_LINUX_DEPS_gl_INCLUDEDIR:INTERNAL=
 juce_opengl_LINUX_DEPS_gl_LIBDIR:INTERNAL=
 juce_opengl_LINUX_DEPS_gl_PREFIX:INTERNAL=
 juce_opengl_LINUX_DEPS_gl_VERSION:INTERNAL=
-package_to_be_found_CFLAGS:INTERNAL=
-package_to_be_found_CFLAGS_I:INTERNAL=
-package_to_be_found_CFLAGS_OTHER:INTERNAL=
-package_to_be_found_FOUND:INTERNAL=
-package_to_be_found_INCLUDEDIR:INTERNAL=
-package_to_be_found_LIBDIR:INTERNAL=
-package_to_be_found_LIBS:INTERNAL=
-package_to_be_found_LIBS_L:INTERNAL=
-package_to_be_found_LIBS_OTHER:INTERNAL=
-package_to_be_found_LIBS_PATHS:INTERNAL=
-package_to_be_found_MODULE_NAME:INTERNAL=
-package_to_be_found_PREFIX:INTERNAL=
-package_to_be_found_STATIC_CFLAGS:INTERNAL=
-package_to_be_found_STATIC_CFLAGS_I:INTERNAL=
-package_to_be_found_STATIC_CFLAGS_OTHER:INTERNAL=
-package_to_be_found_STATIC_LIBDIR:INTERNAL=
-package_to_be_found_STATIC_LIBS:INTERNAL=
-package_to_be_found_STATIC_LIBS_L:INTERNAL=
-package_to_be_found_STATIC_LIBS_OTHER:INTERNAL=
-package_to_be_found_STATIC_LIBS_PATHS:INTERNAL=
-package_to_be_found_VERSION:INTERNAL=
-package_to_be_found_webkit2gtk-4.1_INCLUDEDIR:INTERNAL=
-package_to_be_found_webkit2gtk-4.1_LIBDIR:INTERNAL=
-package_to_be_found_webkit2gtk-4.1_PREFIX:INTERNAL=
-package_to_be_found_webkit2gtk-4.1_VERSION:INTERNAL=
 //ADVANCED property for variable: pkgcfg_lib_JUCE_CURL_LINUX_DEPS_curl
 pkgcfg_lib_JUCE_CURL_LINUX_DEPS_curl-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_juce_audio_devices_LINUX_DEPS_asound
 pkgcfg_lib_juce_audio_devices_LINUX_DEPS_asound-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_juce_graphics_LINUX_DEPS_fontconfig
-pkgcfg_lib_juce_graphics_LINUX_DEPS_fontconfig-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_juce_graphics_LINUX_DEPS_freetype
 pkgcfg_lib_juce_graphics_LINUX_DEPS_freetype-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_juce_opengl_LINUX_DEPS_GL
