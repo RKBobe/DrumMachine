@@ -1,0 +1,11 @@
+# ninja log v5
+0	50	0	/workspaces/DrumMachine/build/CMakeFiles/cmake.verify_globs	db76c9db1c51db2b
+0	4	1756202026877214599	DrumMachine_artefacts/JuceLibraryCode/JuceHeader.h	96b4e75325c8e28e
+0	4	1756202026877214599	/workspaces/DrumMachine/build/DrumMachine_artefacts/JuceLibraryCode/JuceHeader.h	96b4e75325c8e28e
+4	9818	1756202036689215054	CMakeFiles/DrumMachine.dir/Source/MainComponent.cpp.o	21cd9aa50e1141ea
+9836	9857	1756202036729215055	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	a8b4bc3c96e393ba
+9857	9882	1756202036755215057	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	b8c0f1f22fbd50ba
+4	10051	1756202036921215064	CMakeFiles/DrumMachine.dir/Source/Main.cpp.o	5e93cb3b4046d05
+9882	23947	1756202050810215708	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_gui_extra/juce_gui_extra.cpp.o	6ab0df673e50628d
+5	24391	1756202051245215728	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors.cpp.o	76b3d8413138b822
+24393	32282	1756202059124216094	CMakeFiles/DrumMachine.dir/_deps/juce-src/modules/juce_events/juce_events.cpp.o	41572602a3bb40e4
